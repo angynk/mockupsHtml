@@ -1,38 +1,40 @@
 $(document).ready(function() {
-    $("#tablaSolicitudes").hide(); 
-    $("#fecha-inicio-invalida").hide(); 
-    $("#fecha-fin-invalida").hide(); 
+    $("#atTablaSolicitudes").hide(); 
+    $("#atFechaInicioInvalida").hide(); 
+    $("#atFechaFinInvalida").hide(); 
     
     
-    $("#consultaForm").submit(function(e) {
+    $("#atConsultaForm").submit(function(e) {
         e.preventDefault();
     });
     
-    $("#buscarSolicitudes").click(function(){
-        var estado = $("#estado").find(":selected").text();
-        let fecha_inicio = $("#fechaInicio").val();
-        let fecha_fin = $("#fechaFin").val();
+    $("#atBuscarSolicitudes").click(function(){
+        var estado = $("#atEstado").find(":selected").text();
+        let fecha_inicio = $("#atFechaInicio").val();
+        let fecha_fin = $("#atFechaFin").val();
         let fechaInicioValid = isValidDate(fecha_inicio);
         let fechaFinValid = isValidDate(fecha_fin);
         
         if(fechaInicioValid && fechaFinValid){
-             $("#tablaSolicitudes").show();
-             $("#fecha-inicio-invalida").hide(); 
-             $("#fecha-fin-invalida").hide(); 
+             $("#atTablaSolicitudes").show();
+             $("#atFechaInicioInvalida").hide(); 
+             $("#atFechaFinInvalida").hide(); 
+             table.ajax.reload();
         } else {
-             $("#tablaSolicitudes").hide(); 
+             $("#atTablaSolicitudes").hide(); 
             if(!fechaInicioValid && fecha_inicio!=""){
-               $("#fecha-inicio-invalida").show();
+               $("#atFechaInicioInvalida").show();
             }
             if(!fechaFinValid && fecha_fin!=""){
-               $("#fecha-fin-invalida").show();
+               $("#atFechaFinInvalida").show();
             }
             
         }
     });
     /* Componente DataTable JQUERY*/
-    var table = $('#example').DataTable( {
-
+    var table = $('#atSolicitudes').DataTable( {
+        
+        "searching": false,
         "language": {
             "url": "pace/Spanish.json"
         },
@@ -53,16 +55,32 @@ $(document).ready(function() {
         "columnDefs": [ {
             "targets": -1,
             "data": null,
-            "defaultContent": "<button class='btn btn-primary btn-xs dt-edit' id='editbutton'><span class='fa fa-edit'></span></button>"
+            "defaultContent": "<button class='btn btn-primary btn-xs dt-edit' id='at-verbutton'>Ver</button> &nbsp <button class='btn btn-primary btn-xs dt-edit' id='at-editarbutton'>Editar</button> &nbsp <button class='btn btn-primary btn-xs dt-edit' id='at-cancelarbutton'>Cancelar</button>"
         } ]
     } );
 
-    /*Accion */
-    $('#example tbody').on( 'click', 'button', function () {
+    /*Acciones */
+    $('#atSolicitudes tbody').on( 'click', '#at-verbutton', function () {
         var data = table.row( $(this).parents('tr') ).data();
+        //LLAMAR PANTALLA VER SOLICITUD
     } );
-
-} );
+    
+    $('#atSolicitudes tbody').on( 'click', '#at-editarbutton', function () {
+        var data = table.row( $(this).parents('tr') ).data();
+        //LLAMAR PANTALLA EDITAR SOLICITUD
+    } );
+    
+      $('#atSolicitudes tbody').on( 'click', '#at-cancelarbutton', function (e) {
+        var data = table.row( $(this).parents('tr') ).data();
+        $('#atCancelarModal').modal('show');
+      });
+    
+    $('#atSiBtn').click(function() {
+    // handle deletion here
+  	 $('#atCancelarModal').modal('hide');
+    });
+    
+    } );
 
 
 function isValidDate(dateString)

@@ -31,34 +31,27 @@
       <a class="navbar-brand" href="#">Your Company</a>
     </div>
 
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#px-navbar-collapse" aria-expanded="false"><i class="navbar-toggle-icon"></i></button>
-
   </nav>
 
-  <!-- Content -->
+  <!-- INICIO CONTENIDO A INCROPORAR  -->
   <div class="px-content">
     <div class="page-header">
-      <h1><span class="text-muted font-weight-light"><i class="page-header-icon ion-ios-keypad"></i>Consultar Solicitudes</span></h1>
+      <h1><span class="text-muted font-weight-light"><i class="page-header-icon ion-search"></i>Consultar Solicitudes</span></h1>
     </div>
-      
-      
-
     <div class="panel">
       <div class="panel-heading">
-        <div class="panel-title">Autoridad de Tránsito</div>
+        <div class="panel-title">Datos de la consulta</div>
       </div>
         
      <div class="row">
             <div class="col-md-12">
                 <div class="well white">
-                    <form class="form" id="consultaForm">
+                    <form class="form" id="atConsultaForm">
                     <fieldset>
-                        <legend>Datos de la consulta</legend>
-                        <br>
-                        <div class="form-group" id="consulta">
+                        <div class="form-group" id="atConsulta">
                             <div class="col-md-12">
                             <label class="control-label">Estado de la Solicitud</label>
-                            <select class="select2 form-control" id="estado">
+                            <select class="select2 form-control" id="atEstadoSelect">
                                 <option>Pendiente</option>
                                 <option>En trámite</option>
                                 <option>Aprobada</option>
@@ -69,15 +62,15 @@
                         <div class="form-group">
                             <div class="col-md-6">
                                 <label class="control-label normal">Fecha Inicio</label>
-                                <input type="date" class="form-control"  data-error="Fecha Invalida" id="fechaInicio" required>
-                                <div style="padding: 7px;" class="alert alert-danger col-sm-3 col-md-3 col-xs-6" id="fecha-inicio-invalida" role="error">
+                                <input type="date" class="form-control"  data-error="Fecha Invalida" id="atFechaInicio" required>
+                                <div style="padding: 7px;" class="alert alert-danger col-sm-3 col-md-3 col-xs-6" id="atFechaInicioInvalida" role="error">
                                   <strong>Fecha invalida</strong>.
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <label class="control-label normal">Fecha Fin</label>
-                                <input type="date" class="form-control" data-error="Fecha Invalida" id="fechaFin" required>
-                                <div style="padding: 7px;" class="alert alert-danger col-sm-3 col-md-3 col-xs-6" id="fecha-fin-invalida" role="error">
+                                <input type="date" class="form-control" data-error="Fecha Invalida" id="atFechaFin" required>
+                                <div style="padding: 7px;" class="alert alert-danger col-sm-3 col-md-3 col-xs-6" id="atFechaFinInvalida" role="error">
                                   <strong>Fecha invalida</strong>.
                                 </div>
                             </div>
@@ -85,29 +78,51 @@
                     </fieldset>
                     </br>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary" id="buscarSolicitudes">Buscar</button>
+                            <button type="submit" class="btn btn-primary" id="atBuscarSolicitudes">Buscar</button>
                         </div>
                 </form>
             </div>
         </div>
     </div>    
         
-      <div class="panel-body" id="tablaSolicitudes" style="display:none">
-           <table id="example" cellspacing="0" width="100%" class="table table-striped table-bordered" >
+      <div class="panel-body" id="atTablaSolicitudes" style="display:none">
+           <table id="atSolicitudes" cellspacing="0" width="100%" class="table table-striped table-bordered" >
             <thead>
                 <tr>
+                    <th>Entidad Territorial</th>
                     <th>Fecha Solicitud</th>
                     <th>Estado</th>
-                    <th>Ver</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             </table>
       </div>
+      
+       <div class="modal fade" id="atCancelarModal" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">×</button>
+                                            <h4 class="modal-title">Cancelar Solicitud</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-sm-12 form-group">
+                                                    <p>¿Esta seguro de cancelar la solicitud?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="#" id="atSiBtn" class="btn danger">Si</a>
+                                            <a href="#" data-dismiss="modal" class="btn secondary">No</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+      
     </div>
-      
-      
-      
   </div>
+ <!-- FIN CONTENIDO A INCROPORAR  -->
 
   <!-- Footer -->
   <footer class="px-footer px-footer-bottom">
