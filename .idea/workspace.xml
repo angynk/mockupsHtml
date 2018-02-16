@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7714f508-df58-4f9c-bd88-6e7f0992e9fd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/co_ver_traza.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/co_ver_traza.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/at_nuevaSolicitud.html" afterPath="$PROJECT_DIR$/at_nuevaSolicitud.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/co_consultarSolicitud.html" afterPath="$PROJECT_DIR$/co_consultarSolicitud.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/co_ver_traza.html" afterPath="$PROJECT_DIR$/co_ver_traza.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/at_nuevaSolicitud.js" afterPath="$PROJECT_DIR$/js/at_nuevaSolicitud.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,21 +19,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="at_nuevaSolicitud.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/at_nuevaSolicitud.html">
+      <file leaf-file-name="co_consultarSolicitud.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/co_consultarSolicitud.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="92" column="129" lean-forward="true" selection-start-line="92" selection-start-column="81" selection-end-line="92" selection-end-column="129" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="at_nuevaSolicitud.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="at_consultarSolicitud.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/at_consultarSolicitud.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="33" column="42" lean-forward="true" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="at_nuevaSolicitud.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/at_nuevaSolicitud.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+            <state relative-caret-position="256">
+              <caret line="64" column="27" lean-forward="false" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="co_consultarSolicitud.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/co_consultarSolicitud.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="40" column="100" lean-forward="false" selection-start-line="40" selection-start-column="100" selection-end-line="40" selection-end-column="100" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="at_nuevaSolicitud.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/at_nuevaSolicitud.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="487">
+              <caret line="187" column="47" lean-forward="false" selection-start-line="187" selection-start-column="47" selection-end-line="187" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -41,63 +76,13 @@
       <file leaf-file-name="at_consultarSolicitud.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/at_consultarSolicitud.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1096">
-              <caret line="106" column="6" lean-forward="true" selection-start-line="106" selection-start-column="6" selection-end-line="106" selection-end-column="6" />
+            <state relative-caret-position="473">
+              <caret line="51" column="35" lean-forward="true" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ver_solicitud.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ver_solicitud.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="123" column="91" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ver_solicitud.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/ver_solicitud.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="co_ver_traza.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/co_ver_traza.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="56" column="10" lean-forward="false" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="co_ver_traza.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/co_ver_traza.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="co_consultarSolicitud.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/co_consultarSolicitud.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -126,11 +111,7 @@
       <list>
         <option value="$PROJECT_DIR$/pace/Spanish.json" />
         <option value="$PROJECT_DIR$/js/misSolicitudes.js" />
-        <option value="$PROJECT_DIR$/at_consultarSolicitud.html" />
         <option value="$PROJECT_DIR$/js/at_consultarSolicitud.js" />
-        <option value="$PROJECT_DIR$/js/at_nuevaSolicitud.js" />
-        <option value="$PROJECT_DIR$/at_nuevaSolicitud.html" />
-        <option value="$PROJECT_DIR$/co_consultarSolicitud.html" />
         <option value="$PROJECT_DIR$/js/co_consultarSolicitud.js" />
         <option value="$PROJECT_DIR$/at_equiposFotodeteccion.html" />
         <option value="$PROJECT_DIR$/css/pixeladmin.min.css" />
@@ -138,6 +119,10 @@
         <option value="$PROJECT_DIR$/js/ver_solicitud.js" />
         <option value="$PROJECT_DIR$/js/co_ver_traza.js" />
         <option value="$PROJECT_DIR$/co_ver_traza.html" />
+        <option value="$PROJECT_DIR$/at_consultarSolicitud.html" />
+        <option value="$PROJECT_DIR$/co_consultarSolicitud.html" />
+        <option value="$PROJECT_DIR$/at_nuevaSolicitud.html" />
+        <option value="$PROJECT_DIR$/js/at_nuevaSolicitud.js" />
       </list>
     </option>
   </component>
@@ -232,12 +217,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518735657839</updated>
-      <workItem from="1518735659826" duration="22203000" />
+      <workItem from="1518735659826" duration="23892000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22203000" />
+    <option name="totallyTimeSpent" value="23892000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -313,26 +298,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/co_consultarSolicitud.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/at_equiposFotodeteccion.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="613">
           <caret line="193" column="32" lean-forward="false" selection-start-line="193" selection-start-column="32" selection-end-line="193" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/at_nuevaSolicitud.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -349,10 +318,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/at_consultarSolicitud.js">
+    <entry file="file://$PROJECT_DIR$/js/co_ver_traza.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="57" column="8" lean-forward="true" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/co_ver_traza.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="973">
+          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ver_solicitud.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="131" column="86" lean-forward="true" selection-start-line="131" selection-start-column="86" selection-end-line="131" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ver_solicitud.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/at_consultarSolicitud.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="51" column="35" lean-forward="true" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/co_consultarSolicitud.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="40" column="100" lean-forward="false" selection-start-line="40" selection-start-column="100" selection-end-line="40" selection-end-column="100" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/at_nuevaSolicitud.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="187" column="47" lean-forward="false" selection-start-line="187" selection-start-column="47" selection-end-line="187" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -365,54 +390,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/at_nuevaSolicitud.html">
+    <entry file="file://$PROJECT_DIR$/js/at_consultarSolicitud.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="92" column="129" lean-forward="true" selection-start-line="92" selection-start-column="81" selection-end-line="92" selection-end-column="129" />
+        <state relative-caret-position="126">
+          <caret line="33" column="42" lean-forward="true" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/at_consultarSolicitud.html">
+    <entry file="file://$PROJECT_DIR$/js/at_nuevaSolicitud.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1096">
-          <caret line="106" column="6" lean-forward="true" selection-start-line="106" selection-start-column="6" selection-end-line="106" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/ver_solicitud.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/co_ver_traza.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ver_solicitud.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="123" column="91" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/co_ver_traza.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="56" column="10" lean-forward="false" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+        <state relative-caret-position="256">
+          <caret line="64" column="27" lean-forward="false" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
           <folding />
         </state>
       </provider>

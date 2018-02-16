@@ -62,6 +62,7 @@ $(document).ready(function() {
     var table = $('#soportesTabla').DataTable( {
         "paging":   false,
         "ordering": false,
+        "searching": false,
         "info":     false,
         "language": {
             "url": "pace/Spanish.json"
