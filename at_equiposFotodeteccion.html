@@ -38,7 +38,7 @@
 <!-- Content -->
 <div class="px-content">
     <div class="page-header">
-        <h1><span class="text-muted font-weight-light"><i class="page-header-icon ion-plus-circled"></i>Nueva Solicitud</span></h1>
+        <h1><span class="text-muted font-weight-light"><i class="page-header-icon ion-plus-circled"></i>Nueva Foto Detección</span></h1>
     </div>
 
 
@@ -53,24 +53,30 @@
                     <form>
                         <div class="row">
                             <div class="col-sm-6 form-group">
-                                <label for="grid-input-16">Autoridad de Tránsito</label>
-                                <div  id="grid-input-16">
-                                    <input type="text" class="form-control" id="form-group-input-2" value="Secretaría de Movilidad" disabled>
-                                </div>
+                                <label >Tipo Tecnología</label>
+                                <select class="select2 form-control" id="tipoTecnología">
+                                    <option selected="selected" value="0">- Seleccione -</option>
+                                    <option value="1">Tecnología A</option>
+                                    <option value="2">Tecnología B</option>
+                                </select>
                             </div>
                             <div class="col-sm-6 form-group">
-                                <label >Jurisdiccion</label>
-                                <select class="select2 form-control" id="jurisdicciones"></select>
+                                <label >Utilización</label>
+                                <select class="select2 form-control" id="utilizacion">
+                                     <option selected="selected" value="0">- Seleccione -</option>
+                                    <option value="1">Utilización A</option>
+                                    <option value="2">Utilización B</option>
+                                </select>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-6 form-group">
-                                <label >Departamento</label>
-                                <select class="select2 form-control" id="departamentos"></select>
+                                <label >Latitud</label>
+                                <input type="number" class="form-control" id="latitud">
                             </div>
                             <div class="col-sm-6 form-group">
-                                <label >Municipio</label>
-                                <select class="select2 form-control" id="municipios"></select>
+                                <label >Longitud</label>
+                                <input type="number" class="form-control" id="longitud">
                             </div>
                         </div>
                     </form>
@@ -83,46 +89,51 @@
 
     <div class="panel">
         <div class="panel-heading">
-            <div class="panel-title">Soportes</div>
+            <div class="panel-title">Señalización</div>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="well white">
-                    <form id="nuevaSolicitudForm">
+                    <form id="fotoDeteccionForm">
                         <div class="row">
-                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-soporte">
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-senalizacion">
                                 Agregar
                             </button>
                             <!-- Modal -->
-                            <div class="modal fade" id="modal-soporte" tabindex="-1">
+                            <div class="modal fade" id="modal-senalizacion" tabindex="-1">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal">×</button>
-                                            <h4 class="modal-title" id="myModalLabel">Nuevo Soporte</h4>
+                                            <h4 class="modal-title" id="myModalLabel">Nuevo Señalización</h4>
                                         </div>
                                         <div class="modal-body">
-
                                             <div class="row">
                                                 <div class="col-sm-12 form-group">
-                                                    <label >Tipo de Archivo</label>
-                                                    <select required class="select2 form-control" id="tipoArchivo">
+                                                    <label >Nombre</label>
+                                                    <input type="text" class="form-control" id="nombre" required>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6 form-group">
+                                                    <label >Tipo</label>
+                                                    <select class="select2 form-control" id="tipo" required>
                                                         <option selected="selected" value="">- Seleccione -</option>
-                                                        <option value="1">Equipo Humano</option>
-                                                        <option value="2">Plan de Seguridad Vial</option>
-                                                        <option value="3">Soporte Infracciones</option>
-                                                        <option value="4">Soporte Movilidad</option>
-                                                        <option value="5">Soporte Prevención</option>
-                                                        <option value="6">Soporte Siniestralidad</option>
+                                                        <option value="1">Tipo A</option>
+                                                        <option value="2">Tipo B</option>
                                                     </select>
-
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-sm-12 form-group">
-                                                    <label class="custom-file m-b-2">                                                     
-                                                        <input id="archivo" required type="file" id="file" class="form-control" placeholder='Escoja un archivo...' />
-                                                    </label>
+                                                    <label >Latitud</label>
+                                                    <input type="number" class="form-control" id="latitudSenalizacion" required>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12 form-group">
+                                                    <label >Longitud</label>
+                                                    <input type="number" class="form-control" id="longitudSenalizacion" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -137,12 +148,13 @@
                         </div>
                         <br>
                         <div class="panel-body" >
-                            <table id="soportesTabla" cellspacing="0" width="100%" class="table table-striped table-bordered" >
+                            <table id="senalizacionTabla" cellspacing="0" width="100%" class="table table-striped table-bordered" >
                                 <thead>
                                 <tr>
+                                    <th>Nombre</th>
                                     <th>Tipo Archivo</th>
-                                    <th>Nombre Archivo</th>
-                                    <th>Eliminar</th>
+                                    <th>Longitud</th>
+                                    <th>Latitud</th>
                                 </tr>
                                 </thead>
                             </table>
@@ -179,7 +191,7 @@
 
 <!-- Your scripts -->
 <script src="js/app.js"></script>
-<script src="js/at_nuevaSolicitud.js"></script>
+<script src="js/at_equiposFotodeteccion.js"></script>
 
 </body>
 </html>

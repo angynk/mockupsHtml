@@ -5,7 +5,7 @@ $(document).ready(function() {
     
     
     $("#consultaForm").submit(function(e) {
-    e.preventDefault();
+        e.preventDefault();
     });
     
     $("#buscarSolicitudes").click(function(){

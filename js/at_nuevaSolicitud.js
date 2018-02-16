@@ -56,28 +56,8 @@ $(document).ready(function() {
     var listaSoportes = [];
 
     $("#adjuntarBoton").click(function(){
-        AgregarSoporte();
+        agregarSoporte();
     });
-
-    function AgregarSoporte() {
-        var tipoArchivo = $("#tipoArchivo").find(":selected").text();
-        var archivo = document.getElementById('file').files[0];
-        if(!archivo){
-
-        }else{
-            //ENVIAR DATA A REST API
-
-            ActualizarTabla({tipo_documento:tipoArchivo,nombre_documento:archivo.name});
-            $('#modal-soporte').modal('hide');
-        }
-    }
-    
-    function ActualizarTabla(soporte) {
-        // listaSoportes.push(soporte);
-        // table.rows.add(soporte);
-        // table.draw();
-        $('#soportesTabla').dataTable().fnAddData(myData2);
-    }
 
     var table = $('#soportesTabla').DataTable( {
         "paging":   false,
@@ -98,5 +78,27 @@ $(document).ready(function() {
             "defaultContent": "<button class='btn btn-primary btn-xs dt-edit' id='botonEliminar'><span class='fa fa-edit'></span></button>"
         } ]
     } );
+    
+    $("#nuevaSolicitudForm").submit(function(e) {
+        e.preventDefault();
+    });
 
 } );
+
+  function agregarSoporte() {
+    let tipoArchivo = $("#tipoArchivo").val();
+    let archivo = $("#archivo").val();
+    if(archivo != "" && tipoArchivo != ""){
+       $('#modal-senalizacion').modal('hide');
+        //ENVIAR DATA A REST API
+        ActualizarTabla({tipo_documento:tipoArchivo,nombre_documento:archivo.name});
+        $('#modal-soporte').modal('hide');
+    }      
+  }
+    
+    function ActualizarTabla(soporte) {
+        // listaSoportes.push(soporte);
+        // table.rows.add(soporte);
+        // table.draw();
+        //$('#soportesTabla').dataTable().fnAddData(myData2);
+    }
