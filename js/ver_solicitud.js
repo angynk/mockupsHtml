@@ -10,6 +10,7 @@ $(document).ready(function() {
             ];
 
     var table = $('#tablaEquipos').DataTable( {
+        "searching": false,
         language: {
             "url": "pace/Spanish.json"
         },
