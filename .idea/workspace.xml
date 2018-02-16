@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7714f508-df58-4f9c-bd88-6e7f0992e9fd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pace/Spanish.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/adminflare.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/adminflare.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/asphalt.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/asphalt.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/candy-black.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/candy-black.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/candy-blue.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/candy-blue.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/candy-cyan.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/candy-cyan.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/candy-green.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/candy-green.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/candy-purple.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/candy-purple.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/candy-red.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/candy-red.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/clean.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/clean.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/dark-blue.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/dark-blue.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/dark-cyan.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/dark-cyan.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/dark-green.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/dark-green.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/dark-orange.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/dark-orange.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/dark-purple.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/dark-purple.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/dark-red.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/dark-red.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/darklight-blue.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/darklight-blue.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/darklight-cyan.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/darklight-cyan.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/darklight-green.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/darklight-green.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/darklight-orange.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/darklight-orange.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/darklight-purple.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/darklight-purple.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/darklight-red.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/darklight-red.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/default.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/default.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/dust.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/dust.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/fresh.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/fresh.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/frost.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/frost.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/mint-dark.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/mint-dark.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/purple-hills.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/purple-hills.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/silver.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/silver.rtl.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/white.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/themes/white.rtl.min.css" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/arrays.txt" afterPath="$PROJECT_DIR$/arrays.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/at_consultarSolicitud.html" afterPath="$PROJECT_DIR$/at_consultarSolicitud.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/at_nuevaSolicitud.html" afterPath="$PROJECT_DIR$/at_nuevaSolicitud.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/themes/candy-orange.min.css" afterPath="$PROJECT_DIR$/css/themes/candy-orange.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/at_consultarSolicitud.js" afterPath="$PROJECT_DIR$/js/at_consultarSolicitud.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/misSolicitudes.js" afterPath="$PROJECT_DIR$/js/misSolicitudes.js" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="at_nuevaSolicitud.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/at_nuevaSolicitud.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1813">
+              <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="at_consultarSolicitud.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/at_consultarSolicitud.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="882">
+              <caret line="42" column="136" lean-forward="false" selection-start-line="42" selection-start-column="136" selection-end-line="42" selection-end-column="136" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="at_consultarSolicitud.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/at_consultarSolicitud.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-665">
+              <caret line="8" column="48" lean-forward="false" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="misSolicitudes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/misSolicitudes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="23" column="136" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="136" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="at_misSolicitudes.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/at_misSolicitudes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="115" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pace/Spanish.json" />
+        <option value="$PROJECT_DIR$/js/misSolicitudes.js" />
+        <option value="$PROJECT_DIR$/at_nuevaSolicitud.html" />
+        <option value="$PROJECT_DIR$/at_consultarSolicitud.html" />
+        <option value="$PROJECT_DIR$/js/at_consultarSolicitud.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mockupsHtml" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockupsHtml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mockupsHtml" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockupsHtml" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mockupsHtml" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockupsHtml" type="462c0819:PsiDirectoryNode" />
+              <item name="pace" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nataly\Documents\MT\Fotodeteccion\HtmlMockups\mockupsHtml\css\themes" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7714f508-df58-4f9c-bd88-6e7f0992e9fd" name="Default" comment="" />
+      <created>1518735657839</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1518735657839</updated>
+      <workItem from="1518735659826" duration="4154000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4154000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960339" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/css/themes/candy-orange.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pace/Spanish.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/at_nuevaSolicitud.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1813">
+          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/at_misSolicitudes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/misSolicitudes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="136" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="136" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/at_consultarSolicitud.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-665">
+          <caret line="8" column="48" lean-forward="false" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/at_consultarSolicitud.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="42" column="136" lean-forward="false" selection-start-line="42" selection-start-column="136" selection-end-line="42" selection-end-column="136" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

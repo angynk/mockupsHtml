@@ -2,7 +2,7 @@ $(document).ready(function() {
     var table = $('#example').DataTable( {
         
         "language": {
-            "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+            "url": "pace/Spanish.json"
         },
         
        /* Para Consumir el API
@@ -17,7 +17,7 @@ $(document).ready(function() {
             }
         },*/ 
         
-        "ajax": "arrays.txt",
+        "ajax": "arrays.json",
         "columnDefs": [ {
             "targets": -1,
             "data": null,
