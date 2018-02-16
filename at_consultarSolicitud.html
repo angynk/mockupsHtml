@@ -51,7 +51,7 @@
      <div class="row">
             <div class="col-md-12">
                 <div class="well white">
-                    <form class="form">
+                    <form class="form" id="consultaForm">
                     <fieldset>
                         <legend>Datos de la consulta</legend>
                         <br>
@@ -70,10 +70,16 @@
                             <div class="col-md-6">
                                 <label class="control-label normal">Fecha Inicio</label>
                                 <input type="date" class="form-control"  data-error="Fecha Invalida" id="fechaInicio" required>
+                                <div style="padding: 7px;" class="alert alert-danger col-sm-3 col-md-3 col-xs-6" id="fecha-inicio-invalida" role="error">
+                                  <strong>Fecha invalida</strong>.
+                                </div>
                             </div>
                             <div class="col-md-6">
                                 <label class="control-label normal">Fecha Fin</label>
                                 <input type="date" class="form-control" data-error="Fecha Invalida" id="fechaFin" required>
+                                <div style="padding: 7px;" class="alert alert-danger col-sm-3 col-md-3 col-xs-6" id="fecha-fin-invalida" role="error">
+                                  <strong>Fecha invalida</strong>.
+                                </div>
                             </div>
                         </div>
                     </fieldset>
@@ -86,16 +92,16 @@
         </div>
     </div>    
         
-      <div class="panel-body" id="tablaSolicitudes">
-       <table id="example" cellspacing="0" width="100%" class="table table-striped table-bordered" >
-        <thead>
-            <tr>
-                <th>Fecha Solicitud</th>
-                <th>Estado</th>
-                <th>Ver</th>
-            </tr>
-        </thead>
-    </table>
+      <div class="panel-body" id="tablaSolicitudes" style="display:none">
+           <table id="example" cellspacing="0" width="100%" class="table table-striped table-bordered" >
+            <thead>
+                <tr>
+                    <th>Fecha Solicitud</th>
+                    <th>Estado</th>
+                    <th>Ver</th>
+                </tr>
+            </thead>
+            </table>
       </div>
     </div>
       
