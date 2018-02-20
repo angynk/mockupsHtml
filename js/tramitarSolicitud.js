@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    
+     $("#anArchivoInvalido").hide(); 
+     $("#anFormatoInvalido").hide(); 
 
     var anListaEquipos = [
             {
@@ -35,7 +38,7 @@ $(document).ready(function() {
         }]
     } );
 
-    /*Accion */
+    /*Acciones */
     $('#anTablaEquipos tbody').on( 'click', '#anBotonSenalizacion', function () {
         var data = anTable.row( $(this).parents('tr') ).data();
         //Redireccionar
@@ -66,11 +69,46 @@ $(document).ready(function() {
     });
     
      $('#anAprobarDocBtn').click(function() {
-    // handle deletion here
+        $('#aprobarDocumentoModal').modal('show');
     });
     
      $('#anRechazarDocBtn').click(function() {
+         $('#rechazarDocumentoModal').modal('show');
+    });
+    
+     $('#rechazarDocBtn').click(function() {
     // handle deletion here
+  	 $('#rechazarDocumentoModal').modal('hide');
+    });
+    
+     $('#aprobarDocBtn').click(function() {
+    // handle deletion here
+  	 $('#aprobarDocumentoModal').modal('hide');
+    });
+    
+    /*Validar archivo*/
+    var uploadField = document.getElementById("atArchivo");
+    var allowedFiles = [".rar", ".zip", ".pdf"];
+    var regex = new RegExp("([a-zA-Z0-9\s_\\.\-:])+(" + allowedFiles.join('|') + ")$");
+    
+            uploadField.onchange = function() {
+                $("#anArchivoInvalido").hide(); 
+                $("#anFormatoInvalido").hide(); 
+                
+                if(this.files[0].size > 31457280){
+                    $("#anArchivoInvalido").show(); 
+                }else{
+                   
+                    console.log(regex.test(this.files[0].name.toLowerCase()));
+                    if(!regex.test(this.files[0].name.toLowerCase())){
+                        $("#anFormatoInvalido").show(); 
+                    }  
+                }
+            };
+    
+    /*Guardar Archivo de concepto*/
+    $('#anGuardar').click(function() {
+        
     });
     
    

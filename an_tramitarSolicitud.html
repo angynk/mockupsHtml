@@ -83,7 +83,6 @@
 
             </form>
         </div>
-
     </div>
     </div>
         <div class="col-md-8">
@@ -139,7 +138,13 @@
                                  <label class="custom-file m-b-2">                                                     
                                   <input id="atArchivo" required type="file" id="anFile" class="form-control" placeholder='Escoja un archivo...' />
                                   </label>
-                            </div>
+                                    <div style="padding: 7px;" class="alert alert-danger col-sm-3 col-md-3 col-xs-6" id="anArchivoInvalido" role="error">
+                                        <strong>El archivo pesa mas de 30MB</strong>
+                                  </div>
+                                  <div style="padding: 7px;" class="alert alert-danger col-sm-3 col-md-3 col-xs-6" id="anFormatoInvalido" role="error">
+                                    <strong>Formato Invalido, solo se permite archivos .pdf / .zip / .rar</strong>
+                                </div>
+                            
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary" id="anGuardar">Guardar</button>
@@ -219,6 +224,12 @@
                                                     <p>¿Esta seguro de rechazar el equipo?</p>
                                                 </div>
                                             </div>
+                                            <div class="row">
+                                                <div class="col-sm-12 form-group">
+                                                    <p>Observaciones:</p>
+                                                    <textarea id="observacionEquipo" class="form-control"></textarea>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="modal-footer">
                                             <a href="#" id="anRechazarBtn" class="btn danger">Si</a>
@@ -227,6 +238,57 @@
                                     </div>
                                 </div>
       </div>  
+        
+       <div class="modal fade" id="rechazarDocumentoModal" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">×</button>
+                                            <h4 class="modal-title">Rechazar Documento</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-sm-12 form-group">
+                                                    <p>¿Esta seguro de rechazar el documento?</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12 form-group">
+                                                    <p>Observaciones:</p>
+                                                    <textarea id="observacionDocumento" class="form-control"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="#" id="rechazarDocBtn" class="btn danger">Si</a>
+                                            <a href="#" data-dismiss="modal" class="btn secondary">No</a>
+                                        </div>
+                                    </div>
+                                </div>
+      </div> 
+        
+    <div class="modal fade" id="aprobarDocumentoModal" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">×</button>
+                                            <h4 class="modal-title">Aprobar Documento</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-sm-12 form-group">
+                                                    <p>¿Esta seguro de aprobar el documento?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="#" id="aprobarDocBtn" class="btn danger">Si</a>
+                                            <a href="#" data-dismiss="modal" class="btn secondary">No</a>
+                                        </div>
+                                    </div>
+                                </div>
+      </div>     
+        
     </div>
 </div>
 <!-- FIN CONTENIDO A INCROPORAR  -->
