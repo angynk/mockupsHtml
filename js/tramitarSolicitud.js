@@ -65,6 +65,14 @@ $(document).ready(function() {
   	 $('#anRechazarModal').modal('hide');
     });
     
+     $('#anAprobarDocBtn').click(function() {
+    // handle deletion here
+    });
+    
+     $('#anRechazarDocBtn').click(function() {
+    // handle deletion here
+    });
+    
    
 
 
