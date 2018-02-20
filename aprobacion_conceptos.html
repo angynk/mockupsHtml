@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <title>Ministerio de Transporte- Fotodetección</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin" rel="stylesheet" type="text/css">
+  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Core stylesheets -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/pixeladmin.min.css" rel="stylesheet" type="text/css">
+  <link href="css/widgets.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Theme -->
+  <link href="css/themes/candy-orange.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Pace.js -->
+  <script src="pace/pace.min.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar px-navbar">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Your Company</a>
+    </div>
+
+  </nav>
+
+  <!-- INICIO CONTENIDO A INCROPORAR  -->
+  <div class="px-content">
+    <div class="page-header">
+      <h1><span class="text-muted font-weight-light"><i class="page-header-icon ion-checkmark-circled"></i>Aprobación de Conceptos</span></h1>
+    </div>
+    <div class="panel">
+      <div class="panel-heading">
+        <div class="panel-title">Datos de la consulta</div>
+      </div>
+        
+     <div class="row">
+            <div class="col-md-12">
+                <div class="well white">
+                    <form class="form" id="dtConsultaForm">
+                    <fieldset>
+                        <div class="form-group" >
+                            <div class="col-md-2">
+                            <label class="control-label">Número de Radicado</label>
+                            </div>
+                            <div class="col-md-10">
+                            <input type="text" class="form-control" id="dtNumeroRadicado" >
+                            </div>
+                        </div>
+                         </br>
+                        <div class="form-group" >
+                            <div class="col-md-12">
+                            <label class="control-label">Fecha de la Solicitud</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-2">
+                                <label class="control-label">Inicio</label>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="date" class="form-control"  data-error="Fecha Invalida" id="dtFechaInicioS" required>
+                                <div style="padding: 7px;" class="alert alert-danger col-sm-3 col-md-3 col-xs-6" id="dtFechaInicioSInvalida" role="error">
+                                  <strong>Fecha invalida</strong>.
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <label class="control-label">Fin</label>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="date" class="form-control" data-error="Fecha Invalida" id="dtFechaFinS" required>
+                                <div style="padding: 7px;" class="alert alert-danger col-sm-3 col-md-3 col-xs-6" id="dtFechaFinSInvalida" role="error">
+                                  <strong>Fecha invalida</strong>.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group" >
+                            <div class="col-md-12">
+                            <label class="control-label">Fecha de elaboración del concepto</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-2">
+                                <label class="control-label">Inicio</label>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="date" class="form-control"  data-error="Fecha Invalida" id="dtFechaInicioC" required>
+                                <div style="padding: 7px;" class="alert alert-danger col-sm-3 col-md-3 col-xs-6" id="dtFechaInicioCInvalida" role="error">
+                                  <strong>Fecha invalida</strong>.
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <label class="control-label">Fin</label>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="date" class="form-control" data-error="Fecha Invalida" id="dtFechaFinC" required>
+                                <div style="padding: 7px;" class="alert alert-danger col-sm-3 col-md-3 col-xs-6" id="dtFechaFinCInvalida" role="error">
+                                  <strong>Fecha invalida</strong>.
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    </br>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" id="dtBuscarSolicitudes">Buscar</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>    
+        
+      <div class="panel-body" id="dtTablaSolicitudes" style="display:none">
+           <table id="dtSolicitudes" cellspacing="0" width="100%" class="table table-striped table-bordered" >
+            <thead>
+                <tr>
+                    <th><input name="select_all" value="1" type="checkbox"></th>
+                    <th>Entidad Territorial</th>
+                    <th>Fecha Solicitud</th>
+                    <th>Número Radicado</th>
+                    <th>Fecha Concepto</th>
+                    <th>Observaciones</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            </table>
+           <div class="form-group">
+                            <button type="submit" class="btn btn-primary" id="dtFirmarConcepto">Firmar</button>
+                            <button type="submit" class="btn btn-primary" id="dtRechazarConcepto">Rechazar</button>
+           </div>
+      </div>
+      
+       <div class="modal fade" id="dtFirmarModalModal" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">×</button>
+                                            <h4 class="modal-title">Firmar Concepto</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-sm-12 form-group">
+                                                    <p>¿Esta de firmar los conceptos seleccionados?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="#" id="dtFirmarBtn" class="btn danger">Si</a>
+                                            <a href="#" data-dismiss="modal" class="btn secondary">No</a>
+                                        </div>
+                                    </div>
+                                </div>
+      </div>
+    
+     <div class="modal fade" id="dtRechazarModalModal" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">×</button>
+                                            <h4 class="modal-title">Rechazar Concepto</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-sm-12 form-group">
+                                                    <p>¿Esta de rechazar los conceptos seleccionados?</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12 form-group">
+                                                    <p>Observaciones:</p>
+                                                    <textarea id="dtObservaciones" class="form-control"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="#" id="dtRechazarBtn" class="btn danger">Si</a>
+                                            <a href="#" data-dismiss="modal" class="btn secondary">No</a>
+                                        </div>
+                                    </div>
+                                </div>
+      </div>
+      
+    </div>
+  </div>
+ <!-- FIN CONTENIDO A INCROPORAR  -->
+
+  <!-- Footer -->
+  <footer class="px-footer px-footer-bottom">
+   
+  </footer>
+
+  <!-- ==============================================================================
+  |
+  |  SCRIPTS
+  |
+  =============================================================================== -->
+
+  <!-- Load jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Core scripts -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/pixeladmin.min.js"></script>
+
+  <!-- Your scripts -->
+  <script src="js/app.js"></script>
+  <script src="js/aprobacion_conceptos.js"></script>
+    
+  </body>
+</html>
