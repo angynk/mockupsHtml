@@ -25,7 +25,17 @@ $(document).ready(function() {
              $("#dtFechaFinSInvalida").hide(); 
              $("#dtFechaInicioCInvalida").hide(); 
              $("#dtFechaFinCInvalida").hide(); 
-             table.ajax.reload();
+            
+          /* $.ajax({
+                url: "http://172.16.100.206/api/solicitudes",
+               data : {csrfmiddlewaretoken: document.getElementsByName('csrfmiddlewaretoken')[0].value}
+    }).then(function(data) {
+       alert("hola");
+    });*/
+            
+            
+            
+           // table.ajax.reload();
         }else {
              $("#dtTablaSolicitudes").hide(); 
             if(!fechaInicioSValid && fecha_inicio_solicitud!=""){
@@ -42,6 +52,8 @@ $(document).ready(function() {
             }
             
         }
+        
+          
     });
     
     var listaSolicitudes = [
@@ -60,6 +72,14 @@ $(document).ready(function() {
                 observaciones: "Niguna"
             }
             ];
+    
+    function httpGet()
+    {
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", "http://172.16.100.206/api/solicitudes/", false ); 
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+    };
     
     /* Componente DataTable JQUERY*/
     var table = $('#dtSolicitudes').DataTable( {
