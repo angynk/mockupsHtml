@@ -24,12 +24,18 @@ $(document).ready(function() {
         { data: 'latitud' },
         { data: 'longitud' },
         {data: "<button class='btn btn-primary btn-xs dt-edit' id='anBotonSenalizacion'><span class='fa ion-flag'></span></button>"},
+            {data:"<span class='label label-default pull-center'>Completed</span>"},
         {data: "<button class='btn btn-primary btn-xs dt-edit' id='anBotonAprobar'>Aprobar</button>&nbsp<button class='btn btn-primary btn-xs dt-edit' id='anBotonRechazar'>Rechazar</button>"}
         ],
         columnDefs: [ {
-            "targets": -2,
+            "targets": -3,
             "data": null,
             "defaultContent": "<button class='btn btn-primary btn-xs dt-edit' id='anBotonSenalizacion'><span class='fa ion-flag'></span></button>"
+        },
+        {
+            "targets": -2,
+            "data": null,
+            "defaultContent": "<span class='label label-default pull-center'>Completed</span>"
         },
         {
             "targets": -1,
