@@ -53,31 +53,31 @@
                 <div class="form-group">
                 <label class="col-md-5 control-label">Autoridad de Tránsito</label>
                 <div class="col-md-5">
-                    <p class="form-control-static">DATO Autoridad</p>
+                    <p class="form-control-static" id="an-autoridad">DATO Autoridad</p>
                 </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-5 control-label">Departamento</label>
                     <div class="col-md-5">
-                        <p class="form-control-static">DATO Departamento</p>
+                        <p class="form-control-static" id="an-departamento">DATO Departamento</p>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-5 control-label">Municipio</label>
                     <div class="col-md-5">
-                        <p class="form-control-static">DATO Municipio</p>
+                        <p class="form-control-static" id="an-municipio">DATO Municipio</p>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-5 control-label">Jurisdicción</label>
                     <div class="col-md-5">
-                        <p class="form-control-static">DATO Jurisdicción</p>
+                        <p class="form-control-static" id="an-jurisdiccion">DATO Jurisdicción</p>
                     </div>
                 </div>
                   <div class="form-group">
                     <label class="col-md-5 control-label">Fecha de Radicación</label>
                     <div class="col-md-5">
-                        <p class="form-control-static">DATO Fecha Radicación</p>
+                        <p class="form-control-static" id="an-fecha-radicacion">DATO Fecha Radicación</p>
                     </div>
                 </div>
 
@@ -91,17 +91,16 @@
                     <div class="panel-title">Soportes</div>
                 </div>
                 <div class="panel-body">
-                        <div class="widget-messages-item unread">
-                            <label class="widget-messages-from">DATO Tipo Documento</label>
-                            <a href="#" title="" class="widget-messages-title">DATO nombre Documento</a>
-                            <button class='btn btn-primary btn-xs dt-edit' id='anAprobarDocBtn'><span class='fa ion-checkmark-round'></span></button>
-                                <button class='btn btn-primary btn-xs dt-edit' id='anRechazarDocBtn'><span class='fa ion-close-round'></span></button>
-                            <div class="widget-messages-date">
-                                <span class="label label-default pull-right">Completed</span>
-                            </div>
-                            
-                            
-                        </div>
+                    <table id="an-tramitar-soportes" cellspacing="0" width="100%" class="table table-striped table-bordered" >
+                            <thead>
+                            <tr>
+                                <th>Tipo Documento</th>
+                                <th>Nombre</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+                            </thead>
+                        </table>
                 </div>
 
             </div>
@@ -112,14 +111,14 @@
                     <div class="panel-title">Equipos FotoDetección</div>
                 </div>
                 <div class="panel-body">
-                        <table id="anTablaEquipos" cellspacing="0" width="100%" class="table table-striped table-bordered" >
+                        <table id="an-tramitar-equipos" cellspacing="0" width="100%" class="table table-striped table-bordered" >
                             <thead>
                             <tr>
-                                <th>Tipo Tecnología</th>
-                                <th>Utilización</th>
-                                <th>Latitud</th>
-                                <th>Longitud</th>
-                                <th>Señalizaciones</th>
+                                <th>Codigo</th>
+                                <th>Movilidad</th>
+                                <th>Siniestralidad</th>
+                                <th>Prevención</th>
+                                <th>Infracciones</th>
                                 <th>Estado</th>
                                 <th>Acciones</th>
                             </tr>
@@ -130,169 +129,38 @@
             </div>
         </div>
         
-        <div class="col-md-12">
-            <div class="panel">
-                <div class="panel-heading">
-                    <div class="panel-title">Concepto</div>
-                </div>
-                <div class="panel-body">
-                        <div class="row">
-                           <div class="col-sm-12 form-group">
-                                 <label class="custom-file m-b-2">                                                     
-                                  <input id="atArchivo" required type="file" id="anFile" class="form-control" placeholder='Escoja un archivo...' />
-                                  </label>
-                                    <div style="padding: 7px;" class="alert alert-danger col-sm-3 col-md-3 col-xs-6" id="anArchivoInvalido" role="error">
-                                        <strong>El archivo pesa mas de 30MB</strong>
-                                  </div>
-                                  <div style="padding: 7px;" class="alert alert-danger col-sm-3 col-md-3 col-xs-6" id="anFormatoInvalido" role="error">
-                                    <strong>Formato Invalido, solo se permite archivos .pdf / .zip / .rar</strong>
-                                </div>
-                            
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary" id="anGuardar">Guardar</button>
-                        </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="modal fade" id="an-modal-senalizacion" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">×</button>
-                        <h4 class="modal-title" id="myModalLabel">Señalización Equipo</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form class="form-horizontal">
-                            <div class="form-group">
-                                <label class="col-md-5 control-label">Tipo Señal</label>
-                                <div class="col-md-5">
-                                    <p class="form-control-static" id="anTipoSenal"></p>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-5 control-label">Latitud</label>
-                                <div class="col-md-5">
-                                    <p class="form-control-static" id="anLatitud"></p>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-5 control-label">Longitud</label>
-                                <div class="col-md-5">
-                                    <p class="form-control-static" id="anLongitud"></p>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn" data-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="anAprobarModal" tabindex="-1">
+            
+        <div class="modal fade" id="an-tramitar-soporte" tabindex="-1">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal">×</button>
-                                            <h4 class="modal-title">Aprobar Equipo FotoDetección</h4>
+                                            <h4 class="modal-title">Evaluar Soporte</h4>
                                         </div>
                                         <div class="modal-body">
                                             <div class="row">
                                                 <div class="col-sm-12 form-group">
-                                                    <p>¿Esta seguro de aprobar el equipo?</p>
+                                                    <p>Mis Observaciones</p>
+                                                    <textarea id="grid-input-20" class="form-control text-no-resize" id="soporte-observacion"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12 form-group">
+                                                    <p>Comentarios Solicitante</p>
+                                                    <textarea id="grid-input-20" class="form-control text-no-resize" disabled id="soporte-comentarios"></textarea>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <a href="#" id="anAprobarBtn" class="btn danger">Si</a>
-                                            <a href="#" data-dismiss="modal" class="btn secondary">No</a>
+                                            <a href="#" id="an-tramitar-sol-aceptar" class="btn danger">Aprobar</a>
+                                            <a href="#" id="an-tramitar-sol-rechazar" class="btn danger">Rechazar</a>
+                                            <a href="#" id="an-tramitar-sol-requerimiento" class="btn danger">Solicitar Requerimiento</a>
+                                            <a href="#" data-dismiss="modal" class="btn secondary">Cancelar</a>
                                         </div>
                                     </div>
                                 </div>
-      </div>
+      </div>   
         
-      <div class="modal fade" id="anRechazarModal" tabindex="-1">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">×</button>
-                                            <h4 class="modal-title">Rechazar Equipo FotoDetección</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-sm-12 form-group">
-                                                    <p>¿Esta seguro de rechazar el equipo?</p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12 form-group">
-                                                    <p>Observaciones:</p>
-                                                    <textarea id="observacionEquipo" class="form-control"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <a href="#" id="anRechazarBtn" class="btn danger">Si</a>
-                                            <a href="#" data-dismiss="modal" class="btn secondary">No</a>
-                                        </div>
-                                    </div>
-                                </div>
-      </div>  
-        
-       <div class="modal fade" id="rechazarDocumentoModal" tabindex="-1">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">×</button>
-                                            <h4 class="modal-title">Rechazar Documento</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-sm-12 form-group">
-                                                    <p>¿Esta seguro de rechazar el documento?</p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12 form-group">
-                                                    <p>Observaciones:</p>
-                                                    <textarea id="observacionDocumento" class="form-control"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <a href="#" id="rechazarDocBtn" class="btn danger">Si</a>
-                                            <a href="#" data-dismiss="modal" class="btn secondary">No</a>
-                                        </div>
-                                    </div>
-                                </div>
-      </div> 
-        
-    <div class="modal fade" id="aprobarDocumentoModal" tabindex="-1">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">×</button>
-                                            <h4 class="modal-title">Aprobar Documento</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-sm-12 form-group">
-                                                    <p>¿Esta seguro de aprobar el documento?</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <a href="#" id="aprobarDocBtn" class="btn danger">Si</a>
-                                            <a href="#" data-dismiss="modal" class="btn secondary">No</a>
-                                        </div>
-                                    </div>
-                                </div>
-      </div>     
-        
-    </div>
 </div>
 <!-- FIN CONTENIDO A INCROPORAR  -->
 

@@ -1,121 +1,151 @@
+var tramitarListaSoportes = [
+    {tipo_arhivo:"Ejmplo 1",nombre:"Plan seguridad",estado:"Aprobado"},
+    {tipo_arhivo:"Ejmplo 2",nombre:"Plan seguridad",estado:"Rechazado"},
+    {tipo_arhivo:"Ejmplo 2",nombre:"Plan seguridad",estado:"Pendiente"},
+    {tipo_arhivo:"Ejmplo 2",nombre:"Plan seguridad",estado:"Con Requerimientos"}
+];
+var tramitarTablaSoportes = {};
+var tramitarListaEquipos = [
+    {codigo_equipo:"001",estado:"Aprobado",movilidad:false,infraccion:false,prevencion:true,siniestralidad:true},
+    {codigo_equipo:"001",estado:"Pendiente",movilidad:true,infraccion:false,prevencion:true,siniestralidad:true}
+];
+var tramitarTablaEquipos = {};
+
+
 $(document).ready(function() {
     
-     $("#anArchivoInvalido").hide(); 
-     $("#anFormatoInvalido").hide(); 
+/* SOPORTES */    
+ tramitarTablaSoportes = $('#an-tramitar-soportes').DataTable({
 
-    var anListaEquipos = [
-            {
-                tipo_tecnologia:"Doppler",
-                utilizacion:"Multa",
-                latitud: 1.523,
-                longitud: 1.523
-            }
-            ];
-
-    var anTable = $('#anTablaEquipos').DataTable( {
         "searching": false,
+        paging:false,
+        info:false,
         language: {
-            "url": "pace/Spanish.json"
+            "url": "../static/pace/Spanish.json"
         },
-        data: anListaEquipos,
+
+        data: tramitarListaSoportes,
         columns: [
-        { data: 'tipo_tecnologia' },
-        { data: 'utilizacion' },
-        { data: 'latitud' },
-        { data: 'longitud' },
-        {data: "<button class='btn btn-primary btn-xs dt-edit' id='anBotonSenalizacion'><span class='fa ion-flag'></span></button>"},
-            {data:"<span class='label label-default pull-center'>Completed</span>"},
-        {data: "<button class='btn btn-primary btn-xs dt-edit' id='anBotonAprobar'>Aprobar</button>&nbsp<button class='btn btn-primary btn-xs dt-edit' id='anBotonRechazar'>Rechazar</button>"}
+            { data: 'tipo_arhivo'},
+            { data: 'nombre' },
+            { data: "<span class='label label-default pull-right'>Aprobado</span>" },
+            { data: "<button class='btn btn-primary btn-xs dt-edit' id='an-tramite-ver'>Ver</button> &nbsp; <button class='btn btn-primary btn-xs dt-edit' id='an-tramite-evaluar'>Evaluar</button>" }
         ],
-        columnDefs: [ {
-            "targets": -3,
-            "data": null,
-            "defaultContent": "<button class='btn btn-primary btn-xs dt-edit' id='anBotonSenalizacion'><span class='fa ion-flag'></span></button>"
-        },
-        {
-            "targets": -2,
-            "data": null,
-            "defaultContent": "<span class='label label-default pull-center'>Completed</span>"
-        },
-        {
+         columnDefs: [
+             {
+                'targets': -2,
+                'searchable': false,
+                'orderable': false,
+                'className': 'dt-body-center',
+                'render': function (data, type, full, meta){
+                        if(full.estado == "Aprobado"){
+                            return "<span class='label label-success pull-center'>Aprobado</span>"
+                        }else if(full.estado == "Rechazado"){
+                            return "<span class='label label-danger pull-center'>Rechazado</span>"
+                        }else if(full.estado == "Pendiente"){
+                            return "<span class='label label-default pull-center'>Pendiente</span>"
+                        }
+                        return "<span class='label label-warning pull-center'>Con Requerimientos</span>"
+                }          
+            },
+             {
             "targets": -1,
             "data": null,
-            "defaultContent": "<button class='btn btn-primary btn-xs dt-edit' id='anBotonAprobar'>Aprobar</button>&nbsp<button class='btn btn-primary btn-xs dt-edit' id='anBotonRechazar'>Rechazar</button>"
-        }]
-    } );
+            "defaultContent": "<button class='btn btn-primary btn-xs dt-edit' id='an-tramite-ver'>Ver</button> &nbsp; <button class='btn btn-primary btn-xs dt-edit' id='an-tramite-evaluar'>Evaluar</button>"
+            } 
+             
+         ]
 
-    /*Acciones */
-    $('#anTablaEquipos tbody').on( 'click', '#anBotonSenalizacion', function () {
-        var data = anTable.row( $(this).parents('tr') ).data();
-        //Redireccionar
-        // alert(data.tipo_tecnologia);
-        console.log( $('#an-modal-senalizacion').find('#anTipoSenal'));
-        $('#anTipoSenal').val(data.tipo_tecnologia);
-        $('#an-modal-senalizacion').modal('show');
-    } );
+    });
+    
+        $('#an-tramitar-soportes tbody').on( 'click', '#an-tramite-evaluar', function () {
+        var data = tramitarTablaSoportes.row( $(this).parents('tr') ).data();
+        $('#an-tramitar-soporte').modal('show');
+         } );
+    
+     $('#an-tramitar-soportes tbody').on('click', '#an-tramite-ver', function () {
+       var data = tramitarTablaSoportes.row( $(this).parents('tr') ).data();
+       var win = window.open(data.archivo, '_blank');
+       win.focus();
+    });
+    
+     $('#an-tramitar-sol-aceptar').click(function() {
+        // handle deletion here
+  	     $('#an-tramitar-soporte').modal('hide');
+    });
+    
+     $('#an-tramitar-sol-rechazar').click(function() {
+    // handle deletion here
+  	 $('#an-tramitar-soporte').modal('hide');
+    });
+    
+     $('#an-tramitar-sol-requerimiento').click(function() {
+    // handle deletion here
+  	 $('#an-tramitar-soporte').modal('hide');
+    });
+    
+    
+  /* EQUIPOS */  
+    tramitarTablaEquipos = $('#an-tramitar-equipos').DataTable({
+        language: {
+            "url": "../static/pace/Spanish.json"
+        },
 
-      $('#anTablaEquipos tbody').on( 'click', '#anBotonAprobar', function () {
-        var data = anTable.row( $(this).parents('tr') ).data();
-         $('#anAprobarModal').modal('show');
-    } );
-    
-     $('#anTablaEquipos tbody').on( 'click', '#anBotonRechazar', function () {
-        var data = anTable.row( $(this).parents('tr') ).data();
-         $('#anRechazarModal').modal('show');
-    } );
-    
-    $('#anAprobarBtn').click(function() {
-    // handle deletion here
-  	 $('#anAprobarModal').modal('hide');
-    });
-    
-    $('#anRechazarBtn').click(function() {
-    // handle deletion here
-  	 $('#anRechazarModal').modal('hide');
-    });
-    
-     $('#anAprobarDocBtn').click(function() {
-        $('#aprobarDocumentoModal').modal('show');
-    });
-    
-     $('#anRechazarDocBtn').click(function() {
-         $('#rechazarDocumentoModal').modal('show');
-    });
-    
-     $('#rechazarDocBtn').click(function() {
-    // handle deletion here
-  	 $('#rechazarDocumentoModal').modal('hide');
-    });
-    
-     $('#aprobarDocBtn').click(function() {
-    // handle deletion here
-  	 $('#aprobarDocumentoModal').modal('hide');
-    });
-    
-    /*Validar archivo*/
-    var uploadField = document.getElementById("atArchivo");
-    var allowedFiles = [".rar", ".zip", ".pdf"];
-    var regex = new RegExp("([a-zA-Z0-9\s_\\.\-:])+(" + allowedFiles.join('|') + ")$");
-    
-            uploadField.onchange = function() {
-                $("#anArchivoInvalido").hide(); 
-                $("#anFormatoInvalido").hide(); 
-                
-                if(this.files[0].size > 31457280){
-                    $("#anArchivoInvalido").show(); 
-                }else{
-                   
-                    console.log(regex.test(this.files[0].name.toLowerCase()));
-                    if(!regex.test(this.files[0].name.toLowerCase())){
-                        $("#anFormatoInvalido").show(); 
-                    }  
+        data: tramitarListaEquipos,
+        columns: [
+            { data: 'codigo_equipo'},
+            { data: 'movilidad',
+                "render": function (data, type, row) {
+                          return (data === true) ? "<span class='fa ion-checkmark-round'></span>"
+                          : "<span class='fa ion-close-round'></span>";
                 }
-            };
-    
-    /*Guardar Archivo de concepto*/
-    $('#anGuardar').click(function() {
-        
+            },
+            { data: 'siniestralidad',
+                "render": function (data, type, row) {
+                          return (data === true) ? "<span class='fa ion-checkmark-round'></span>"
+                          : "<span class='fa ion-close-round'></span>";
+                } },
+            { data: 'prevencion',
+                "render": function (data, type, row) {
+                          return (data === true) ? "<span class='fa ion-checkmark-round'></span>"
+                          : "<span class='fa ion-close-round'></span>";
+                } },
+            { data: 'infraccion',
+                "render": function (data, type, row) {
+                          return (data === true) ? "<span class='fa ion-checkmark-round'></span>"
+                          : "<span class='fa ion-close-round'></span>";
+                } },
+            { data: "<span class='label label-default pull-right'>Aprobado</span>" },
+            { data: "<button class='btn btn-primary btn-xs dt-edit' id='an-equipo-evaluar'>Evaluar</button>" }
+        ],
+         columnDefs: [
+             {
+                'targets': -2,
+                'searchable': false,
+                'orderable': false,
+                'className': 'dt-body-center',
+                'render': function (data, type, full, meta){
+                        if(full.estado == "Aprobado"){
+                            return "<span class='label label-success pull-center'>Aprobado</span>"
+                        }else if(full.estado == "Rechazado"){
+                            return "<span class='label label-danger pull-center'>Rechazado</span>"
+                        }else if(full.estado == "Pendiente"){
+                            return "<span class='label label-default pull-center'>Pendiente</span>"
+                        }
+                        return "<span class='label label-warning pull-center'>Con Requerimientos</span>"
+                }          
+            },
+             {
+            "targets": -1,
+            "data": null,
+            "defaultContent": "<button class='btn btn-primary btn-xs dt-edit' id='an-equipo-evaluar'>Evaluar</button>"
+            } 
+             
+         ]
+
     });
+    
+    
     
    
 
